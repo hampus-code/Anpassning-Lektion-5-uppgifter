@@ -1,0 +1,36 @@
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    
+
+    /* Inom dessa width blir header grön och flyttar centralt,
+     och div blir blå och flyttar centralt i en row*/
+
+    h1 {
+        display: flex;
+        color: Green;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div {
+        display: flex;
+        color: dodgerblue;
+        font-size: 16px;
+        justify-content: center;
+        justify-content: space-around;
+    }
+}
+
+/* Efter denna width går h1 och div till höger istället*/
+
+@media screen and (min-width: 1025px) {
+    h1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    div {
+        display: flex;
+        font-size: 16px;
+        justify-content: flex-end;
+    }
+}
+
